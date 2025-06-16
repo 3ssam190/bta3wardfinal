@@ -1,0 +1,22 @@
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+RewriteEngine On
+
+# Skip rewriting for existing files/folders
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Skip rewriting for root "/"
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^ - [L]
+
+# Rewrite clean URLs to pages/*.php
+RewriteRule ^([^/]+)/?$ pages/$1.php [L]
+
+# Optional redirect .php URLs to clean URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+pages/([^.]+)\.php [NC]
+RewriteRule ^ pages/%1 [R=301,L]

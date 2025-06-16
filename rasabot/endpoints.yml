@@ -1,0 +1,7 @@
+action_endpoint:
+  url: "https://helectronicservices.com/grad/gradproj/rasabot/api.php"
+
+tracker_store:
+  type: SQL
+  dialect: sqlite
+  db: rasa.db

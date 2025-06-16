@@ -1,0 +1,2 @@
+action_endpoint:
+  url: "https://helectronicservices.com/grad/gradproj/chatbot/rasa_bot/webhook"

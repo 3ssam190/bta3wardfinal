@@ -1,0 +1,17 @@
+
+
+
+
+.image-container {
+    width: 100%;
+    height: 256px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 0.5rem; /* Match your rounded-lg */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image */
+}

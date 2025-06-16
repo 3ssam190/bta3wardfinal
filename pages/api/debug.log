@@ -1,0 +1,13 @@
+Input: {"type":"custom_bouquet","cover_id":2,"flower_count":20,"flowers":{"5":20},"total_price":{}}
+Session: Array
+(
+    [user_id] => 1
+    [user_email] => e.a1010@yahoo.com
+    [user_name] => Kamal Ahmed
+    [user_role] => user
+    [profile_photo] => /assets/images/default-profile.png
+    [cart_id] => 11
+)
+
+PDO Error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_id' cannot be null
+Response: {"success":false,"message":"Database error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'product_id' cannot be null","cart_count":0}
